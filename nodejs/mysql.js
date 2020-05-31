@@ -5,8 +5,7 @@ var connection = mysql.createConnection({
   password : 'ektgha0',
   database : 'opentutorials'
 });
- 
-connection.connect();
+ connection.connect();
  
 connection.query('select*from topic', function (error, results, fields) {
   if (error) {
